@@ -14,7 +14,8 @@
          </v-layout>
        
     </v-app-bar>
-    <PaymentRequest/>
+    <!-- <PaymentRequest/> -->
+    <Success/>
       <v-footer class="ottu-footer" padless dark>
        <div class="social-icons">
          <a href="#0" class="social__link"><i class="fab fa-facebook-f"></i></a>
@@ -26,13 +27,13 @@
 </template>
 
 <script>
-// import Success from './components/Success.vue'
-import PaymentRequest from './components/PaymentRequest.vue'
+import Success from './components/Success.vue'
+// import PaymentRequest from './components/PaymentRequest.vue'
 export default {
   name: 'App',
   components: {
-   PaymentRequest
-  // Success
+  //  PaymentRequest
+  Success
   }
 }
 </script>
