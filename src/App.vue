@@ -1,28 +1,42 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app id="app">
+     <v-app-bar  class="ottu-header" app>
+    
+         <v-layout row justify-center align-center class="height100">
+            <v-flex class="d-flex" justify-space-between xs9 sm9 md9 >
+               <div> 
+                 <v-img  src="images/logo.png"
+                  height = "35"
+                  width="103"/>
+                </div>
+                <a href="#0" class="lang-toggler">بالعربي</a>
+            </v-flex>
+         </v-layout>
+       
+    </v-app-bar>
+    <Success/>
+      <v-footer class="ottu-footer" padless dark>
+       <div class="social-icons">
+         <a href="#0" class="social__link"><i class="fab fa-facebook-f"></i></a>
+         <a href="#0" class="social__link"><i class="fab fa-twitter"></i></a>
+         <a href="#0" class="social__link"><i class="fab fa-instagram"></i></a>
+       </div>
+      </v-footer>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Success from './components/Success.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+  //  PaymentRequest
+  Success
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>

@@ -1,0 +1,405 @@
+@font-face {
+    font-family: 'SF PRO REGULAR';
+    src:  url('../fonts/SFProText-Regular.woff2') format('woff2'),
+          url('../fonts/SFProText-Regular.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'SF PRO MEDIUM';
+    src:  url('../fonts/SFProText-Medium.woff2') format('woff2'),
+          url('../fonts/SFProText-Regular.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'SF PRO SEMIBOLD';
+    src:  url('../fonts/SFProText-Semibold.woff2') format('woff2'),
+          url('../fonts/SFProText-Semibold.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'SF PRO BOLD';
+    src:  url('../fonts/SFProText-Bold.woff2') format('woff2'),
+          url('../fonts/SFProText-Bold.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'SF PRO HEAVY';
+    src:  url('../fonts/SFProText-Heavy.woff2') format('woff2'),
+          url('../fonts/SFProText-Heavy.woff') format('woff');
+  }
+
+.mt-15{
+    margin-top:15px;
+}
+.mt-25{
+    margin-top:25px;
+}
+.mt-30{
+    margin-top:30px;
+}
+.ma-15{
+    margin:15px;
+}
+.ma-10{
+    margin:10px;
+}
+.card-shadow{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px!important;
+}
+.rounded-10{
+    border-radius: 10px!important;
+    -webkit-border-radius: 10px!important;
+    -moz-border-radius: 10px!important;
+    -ms-border-radius: 10px!important;
+    -o-border-radius: 10px!important;
+}
+.break-word{
+    word-break: break-all;
+}
+.lang-toggler{
+    font-family: 'Tajawal', sans-serif!important;
+    color:#fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.lang-toggler:hover{
+    color: #F77D1A;
+}
+.d-flex>*, .d-inline-flex>*{
+    flex:unset!important;
+}
+.height100{
+    height: 100%!important;
+}
+.ottu-header{
+    height: 65px!important;
+    background-color: #302F37!important;
+    margin-bottom: 30px;
+}
+.ottu-footer{
+    background-color:#302F37!important;
+    height: 65px!important;
+    display: flex;
+    justify-content: center;
+}
+.social-icons{
+    display: flex;
+
+}
+.social__link{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.social__link:hover{
+    border: 1px solid #F77D1A;
+    color:#F77D1A;
+}
+.social__link:not(:last-child){
+    margin-inline-end: 30px;
+}
+footer{
+    margin-top:70px
+}
+/***************************************First Section****************/
+.first-section, .second-section{
+    padding-bottom:25px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.third-section{
+    padding-top:25px;
+}
+.first-section .receiver{
+    position: relative;
+}
+.first-section .receiver:before{
+    content:'';
+    height: 112px;
+    width:1px;
+    display: block;
+    background-color: #E0E0E0;
+    position: absolute;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    top:0px;
+    left:-40px;
+}
+.first-section-title{
+    font-family: 'SF PRO MEDIUM';
+    color:#B1B9CC;
+    font-size: 16px;
+}
+.name{
+    font-family: 'SF PRO BOLD';
+    color:#302F37;
+    font-size: 18px; 
+    margin-top:10px; 
+}
+.email, .phone{
+    font-family: 'SF PRO REGULAR';
+    font-size: 16px; 
+    color:#302F37;
+}
+.order-details-accordion .v-expansion-panel__header{
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+}
+.order-details-accordion.v-expansion-panel{
+    box-shadow: none;
+}
+.accordion-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.accordion-title{
+    font-family: 'SF PRO MEDIUM';
+    font-size: 16px;
+    color:#B1B9CC;
+    margin-inline-start: 15px;
+}
+.detail-head{
+    font-family: 'SF PRO REGULAR';
+    font-size: 14px;
+    color:#B1B9CC
+}
+.detail-body{
+    font-family: 'SF PRO BOLD';
+    font-size: 16px;
+    color:#302F37;
+}
+.detail-right{
+    padding-inline-start: 40px;
+}
+.download__btn{
+    font-family: 'SF PRO SEMIBOLD';
+    height: 48px;
+    font-size: 17px;
+    margin:auto;
+    margin-top:20px;
+    width: 45%;
+    text-transform:capitalize!important;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+.download__btn svg{
+    margin-inline-end: 10px;
+}
+
+@media(min-width:992px)and(max-width:1400px){
+    .detail-card{
+        min-height: 185px!important;
+    }
+}
+/*************************************Third Section*******************/
+.payment-heading{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-family: 'SF PRO REGULAR';
+    font-size: 16px;
+    color:#B1B9CC;
+}
+.payment-amount{
+    height: 45px;
+}
+.payment-amount .v-text-field__slot{
+    align-items: center;
+}
+.payment-amount input{
+    margin-top:0px;
+   text-align: center;
+}
+.payment-value{
+    width: 145px;
+}
+.payment-value .theme--light.v-text-field--outline>.v-input__control>.v-input__slot{
+    border: 1px solid #E0E0E0;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.bill-value{
+  color:#03A154;
+  font-size: 20px;
+  font-family: 'SF PRO HEAVY';
+}
+.currency{
+    font-size: 14px;
+    display: inline-block;
+    margin-inline-start: 5px;
+}
+.total-text{
+    font-family: 'SF PRO REGULAR';
+    font-size: 14px;
+}
+.pay__btn{
+    color:#fff!important;
+    font-size: 17px;
+    height: 48px;
+    width: 45%;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    text-transform: capitalize!important;
+}
+.terms{
+    font-family: 'SF PRO REGULAR';
+    font-size: 14px;
+    color:#302F37;
+}
+.terms .terms__link{
+    color:#F77D1A;
+    font-weight: bold;
+    text-decoration: none;
+}
+.terms .terms__link:hover{
+    text-decoration: underline;
+}
+.payment-method{
+    width:fit-content!important;
+    padding-top:10px;
+    padding-left:15px;
+    padding-right: 15px;
+    border:1px solid #E0E0E0;
+    border-radius: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.number{
+    margin-top:10px;
+    font-family: 'SF PRO REGULAR';
+    font-size: 13px;
+    color:#302F37;
+}
+.slick-slide div:first-child{
+    display: flex;
+    justify-content: center;
+}
+.slick-slide.slick-current .payment-method{
+    border: 1px solid #03A154;
+}
+.payment-slider{
+    margin-top:50px;
+}
+.payment-slider .slick-prev:before {
+    content:url("../images/arrow-left.png");
+    display: block;
+}
+.payment-slider .slick-next:before {
+    content:url("../images/arrow-right.png");
+    display: block;
+}
+/* Reset card box shadow */
+.second-section.v-card ,.third-section.v-card, .first-section.v-card{
+    box-shadow: none;
+    padding:15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+@media(min-width:768px){
+    .theme--light.application{
+        background-color: #fff!important;
+    }
+}
+@media(max-width:768px){
+    .second-section{
+        margin-bottom: 15px;
+    }
+    .first-section.v-card{
+        margin-bottom: 15px;
+    }
+    .download__btn{
+        border:none!important;
+    }
+    .order-details-accordion{
+        border-bottom: 1px solid #E0E0E0;
+    }
+    .first-section.v-card{
+        border: 4px solid #EAEAEA;
+    }
+    .second-section.v-card {
+        border: 4px solid #EAEAEA;
+    }
+    .third-section.v-card{
+        border: 4px solid #EAEAEA;
+    }
+    .first-section .receiver:before{
+        display: none;
+    }
+    .receiver{
+        margin-top:10px
+    }
+    .pay__btn{
+        width: 100%;
+    }
+    .download__btn{
+        width: 100%;
+    }
+}
+/***************************************SUCCESS PAGE************************/
+.success-message{
+    display: flex;
+    flex-direction: column!important;
+    justify-content: center;
+    align-items: center;
+}
+.success-message__span1{
+    font-family: 'SF PRO BOLD';
+    font-size: 32px;
+    color:#03A154;
+}
+.success-message__span2{
+    display: block;
+    color:#302F37;
+    font-family: 'SF PRO REGULAR';
+}
+.success-message__span3{
+    display: block;
+    color:#03A154;
+    font-family: 'SF PRO BOLD';
+}
+.success-accordion .accordion-header{
+    display: flex;
+    justify-content: space-between;
+}
+.success-accordion .accordion-header span{
+    font-family: 'SF PRO REGULAR';
+    font-size: 16px;
+    color:#302F37;
+}
+.success-accordion .v-expansion-panel__container{
+    border-top: none!important;
+}
