@@ -1,7 +1,7 @@
 <template>
   <div class="payment-request">
    <v-layout row justify-center>
-       <v-flex xs9 sm9 md9 xl6>
+       <v-flex xs11 sm10 md9 xl6>
            <!-- First Section -->
             <div class="border-bottom">
                 <v-card class="first-section">
@@ -50,11 +50,16 @@
                         >
                         <template v-slot:header>
                             <div class="accordion-header">
-                                <svg id="Group_1259" data-name="Group 1259" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                              
+                                  <svg id="Group_1259" data-name="Group 1259" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="change-in-mobile">
                                     <path id="Path_1039" data-name="Path 1039" d="M0,0H24V24H0Z" fill="none"/>
-                                    <path id="Path_1040" data-name="Path 1040" d="M5,21V5A2,2,0,0,1,7,3H17a2,2,0,0,1,2,2V21l-3-2-2,2-2-2-2,2L8,19,5,21M9,7h6M9,11h6m-2,4h2" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                    <path id="Path_1040" data-name="Path 1040" d="M5,21V5A2,2,0,0,1,7,3H17a2,2,0,0,1,2,2V21l-3-2-2,2-2-2-2,2L8,19,5,21M9,7h6M9,11h6m-2,4h2" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="ico"/>
                                 </svg>
-                                <span class="accordion-title">Order Description</span>
+                                <div class="accordion-heading"> 
+                                <span class="icon-text">Order Description</span>
+                               
+                               <span class="mr detail-num">255315648</span>
+                               </div>
                             </div>
                         </template>
                         <v-card>
@@ -159,7 +164,7 @@
                 </v-layout>
                 <v-layout>
                      <v-btn outline color="#F77D1A" class="download__btn">
-                         <svg id="Group_1258" data-name="Group 1258" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                         <svg id="Group_1258" class="download__icon" data-name="Group 1258" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" >
                             <path id="Path_1035" data-name="Path 1035" d="M0,0H24V24H0Z" fill="none"/>
                             <path id="Path_1036" data-name="Path 1036" d="M14,3V7a1,1,0,0,0,1,1h4" fill="none" stroke="#f77d1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
                             <path id="Path_1037" data-name="Path 1037" d="M17,21H7a2,2,0,0,1-2-2V5A2,2,0,0,1,7,3h7l5,5V19A2,2,0,0,1,17,21Z" fill="none" stroke="#f77d1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
@@ -212,7 +217,8 @@
                             </v-flex>
                             <v-flex md6>
                                  <div class="payment-value">
-                                    <v-text-field outline placeholder= "00.000 KWD" class="payment-amount"></v-text-field>
+                                    <v-text-field  type = "number" outline placeholder= "00.000" class="payment-amount" suffix="KWD"></v-text-field>
+                                   
                                 </div>
                             </v-flex>
                         </v-layout>

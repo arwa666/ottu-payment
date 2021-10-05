@@ -243,6 +243,10 @@
 .download__btn svg{
     margin-inline-end: 10px;
 }
+.download__icon{
+    min-width:27px!important;
+    min-height:27px!important
+}
 @media(min-width:768px){
     .first-pattern{
         display: none;
@@ -266,6 +270,19 @@
 .payment-amount{
     height: 45px;
 }
+
+.payment-amount .v-text-field__suffix{
+    font-size: 16px;
+    font-family: 'SF PRO REGULAR';
+    color: #C7C7C7;
+    position: relative;
+    left: -14px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .payment-amount .v-text-field__slot{
     align-items: center;
 }
@@ -275,6 +292,7 @@
 }
 .payment-value{
     width: 145px;
+    position: relative;
 }
 .payment-value .theme--light.v-text-field--outline>.v-input__control>.v-input__slot{
     border: 1px solid #E0E0E0;
@@ -362,12 +380,15 @@
 /* Reset card box shadow */
 .second-section.v-card ,.third-section.v-card, .first-section.v-card{
     box-shadow: none;
-    padding:15px;
+   
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+}
+.first-section.v-card,.third-section.v-card{
+    padding:15px;
 }
 @media(min-width:768px){
     .theme--light.application{
@@ -413,6 +434,26 @@
     }
     .download__btn{
         width: 100%;
+    }
+    .terms{
+        text-align: center;
+    }
+    .order-details-accordion .accordion-heading{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .detail-num{
+        margin-inline-start: 15px;
+    }
+   
+}
+.v-expansion-panel__container--active .mr{
+    display: none;
+}
+@media(max-width:420px){
+    .payment-method{
+        padding-inline-start: 5px;
+        padding-inline-end: 5px;
     }
 }
 /***************************************SUCCESS PAGE************************/
@@ -586,6 +627,16 @@
     top:0px;
     right: 0px;
 }
+.side-arrow .v-expansion-panel__container>.v-expansion-panel__header .v-expansion-panel__header__icon .v-icon {
+    transform: rotate(
+        -90deg);  
+}
+ .side-arrow .v-expansion-panel__container--active>.v-expansion-panel__header .v-expansion-panel__header__icon .v-icon {
+    -webkit-transform: rotate(
+-90deg);
+    transform: rotate(
+-90deg);
+}
 @media(min-width:768px){
     .failed-pattern{
         display: none;
@@ -632,7 +683,10 @@
     .download__btn {
         margin-top:10px
     }
-}
-@media(max-width:420px){
-  
+    .icon-text{
+        color:#302F37!important;
+    }
+    .accordion-header svg .ico{
+        stroke:#302F37!important;
+    }
 }

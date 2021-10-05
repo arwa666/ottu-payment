@@ -1,7 +1,7 @@
 <template>
   <div class="success-page">
    <v-layout row justify-center>
-       <v-flex xs9 sm9 md9 xl6>
+       <v-flex xs11  sm10 md9 xl6>
            <!-- First Section -->
             <div class="border-bottom" style="padding-bottom:30px">
                 <v-layout row wrap class="success-message">
@@ -37,17 +37,17 @@
             <!-- Second Section -->
             <div class="border-bottom">
                 <v-layout>
-                    <v-expansion-panel class="order-details-accordion  success-accordion border-none-m">
+                    <v-expansion-panel class="order-details-accordion  success-accordion  side-arrow border-none-m">
                         <v-expansion-panel-content
                         >
                         <template v-slot:header>
                             <div class="accordion-header success-accordion">
                             <svg id="Group_1312" data-name="Group 1312" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <path id="Path_1041" data-name="Path 1041" d="M0,0H24V24H0Z" fill="none"/>
-                                <rect id="Rectangle_82" data-name="Rectangle 82" width="18" height="14" rx="3" transform="translate(3 5)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-                                <line id="Line_54" data-name="Line 54" x2="18" transform="translate(3 10)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-                                <line id="Line_55" data-name="Line 55" x2="0.01" transform="translate(7 15)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-                                <line id="Line_56" data-name="Line 56" x2="2" transform="translate(11 15)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                <rect id="Rectangle_82" data-name="Rectangle 82" width="18" height="14" rx="3" transform="translate(3 5)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="ico"/>
+                                <line id="Line_54" data-name="Line 54" x2="18" transform="translate(3 10)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="ico"/>
+                                <line id="Line_55" data-name="Line 55" x2="0.01" transform="translate(7 15)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="ico"/>
+                                <line id="Line_56" data-name="Line 56" x2="2" transform="translate(11 15)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="ico"/>
                                 </svg>
 
                                <div class="accordion-heading"> 
@@ -309,7 +309,7 @@
                               
                                   <svg id="Group_1259" data-name="Group 1259" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="change-in-mobile">
                                     <path id="Path_1039" data-name="Path 1039" d="M0,0H24V24H0Z" fill="none"/>
-                                    <path id="Path_1040" data-name="Path 1040" d="M5,21V5A2,2,0,0,1,7,3H17a2,2,0,0,1,2,2V21l-3-2-2,2-2-2-2,2L8,19,5,21M9,7h6M9,11h6m-2,4h2" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                    <path id="Path_1040" data-name="Path 1040" d="M5,21V5A2,2,0,0,1,7,3H17a2,2,0,0,1,2,2V21l-3-2-2,2-2-2-2,2L8,19,5,21M9,7h6M9,11h6m-2,4h2" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="ico"/>
                                 </svg>
                                 <div class="accordion-heading"> 
                                 <span class="icon-text">Order Description</span>
