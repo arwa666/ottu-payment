@@ -1,5 +1,5 @@
 <template>
-  <div class="success-page">
+  <div class="failed-page">
    <v-layout row justify-center>
        <v-flex xs9 sm9 md9 xl6>
            <!-- First Section -->
@@ -7,20 +7,21 @@
                 <v-layout row wrap class="success-message">
                    
                         <svg id="Iconly_Light_Tick_Square" data-name="Iconly/Light/Tick Square" xmlns="http://www.w3.org/2000/svg" width="83" height="83" viewBox="0 0 83 83">
-                            <g id="Tick_Square" data-name="Tick Square" transform="translate(-2 -2)">
-                                <circle id="Ellipse_75" data-name="Ellipse 75" cx="41.5" cy="41.5" r="41.5" transform="translate(2 2)" fill="#d6ffeb"/>
-                                <g id="Ellipse_76" data-name="Ellipse 76" transform="translate(11 11)" fill="#fff" stroke="#03a154" stroke-width="3">
+                            <circle id="Ellipse_77" data-name="Ellipse 77" cx="41.5" cy="41.5" r="41.5" fill="#ffe7e7"/>
+                            <g id="Ellipse_78" data-name="Ellipse 78" transform="translate(9 9)" fill="#fff" stroke="#f0252b" stroke-width="3">
                                 <circle cx="32.5" cy="32.5" r="32.5" stroke="none"/>
                                 <circle cx="32.5" cy="32.5" r="31" fill="none"/>
-                                </g>
-                                <path id="Stroke_3" data-name="Stroke 3" d="M0,8.6l8.606,8.6L25.81,0" transform="translate(30.595 34.9)" fill="none" stroke="#03a154" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+                            </g>
+                            <g id="Group_1345" data-name="Group 1345" transform="translate(22.6 22.6)">
+                                <path id="Path_1062" data-name="Path 1062" d="M0,0H38.8V38.8H0Z" fill="none"/>
+                                <line id="Line_67" data-name="Line 67" x1="20" y2="20" transform="translate(9.4 9.4)" fill="none" stroke="#f0252b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                <line id="Line_68" data-name="Line 68" x2="20" y2="20" transform="translate(9.4 9.4)" fill="none" stroke="#f0252b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
                             </g>
                         </svg>
-                        <span class="success-message__span1">Thank You!</span>
-                        <span class="success-message__span2">Congratulations your transfer was completed successfully</span>
-                        <div class="success-message__span3">12.000 KD Is paid</div>
+                        <span class="success-message__span1 theme-red">Failed!</span>
+                        <span class="success-message__span2">Oops! something went wrong please try again</span>
                 </v-layout>
-                <div class="success-pattern">
+                <div class="failed-pattern">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="97" height="81" viewBox="0 0 97 81">
                         <defs>
                             <clipPath id="clip-path">
@@ -28,10 +29,9 @@
                             </clipPath>
                         </defs>
                         <g id="Mask_Group_2" data-name="Mask Group 2" opacity="0.32" clip-path="url(#clip-path)">
-                            <path id="Ellipse_2" data-name="Ellipse 2" d="M94.885,133.086c36.012,0,65.311-23.217,65.311-51.756S130.9,29.575,94.885,29.575,29.575,52.792,29.575,81.33s29.3,51.756,65.311,51.756m0,29.575C42.482,162.66,0,126.248,0,81.33S42.482,0,94.885,0,189.77,36.413,189.77,81.33,147.289,162.66,94.885,162.66Z" transform="translate(0.441 -81.495)" fill="#d6ffeb"/>
+                            <path id="Ellipse_2" data-name="Ellipse 2" d="M94.885,133.086c36.012,0,65.311-23.217,65.311-51.756S130.9,29.575,94.885,29.575,29.575,52.792,29.575,81.33s29.3,51.756,65.311,51.756m0,29.575C42.482,162.66,0,126.248,0,81.33S42.482,0,94.885,0,189.77,36.413,189.77,81.33,147.289,162.66,94.885,162.66Z" transform="translate(0.441 -81.495)" fill="#ffe7e7"/>
                         </g>
                         </svg>
-
                 </div>
             </div>
             <!-- Second Section -->
@@ -42,7 +42,7 @@
                         >
                         <template v-slot:header>
                             <div class="accordion-header success-accordion">
-                            <svg id="Group_1312" data-name="Group 1312" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <svg id="Group_1312" data-name="Group 1312" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <path id="Path_1041" data-name="Path 1041" d="M0,0H24V24H0Z" fill="none"/>
                                 <rect id="Rectangle_82" data-name="Rectangle 82" width="18" height="14" rx="3" transform="translate(3 5)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
                                 <line id="Line_54" data-name="Line 54" x2="18" transform="translate(3 10)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
@@ -52,7 +52,7 @@
 
                                <div class="accordion-heading"> 
                                 <span class="icon-text">Payment Details</span>
-                               <span class="theme-red mr">Knet</span>
+                               <span class="theme-red mr">Not Captured</span>
                                </div> 
                             </div>
                         </template>
@@ -82,7 +82,7 @@
                                        </v-card-text>
                                    </v-card>
                                </v-flex>
-                               <v-flex xs12 sm6 md4>
+                               <v-flex  xs12 sm6 md4>
                                    <v-card class="ma-10  rounded-10 card-shadow ">
                                        <v-card-text>
                                             <div class="detail-head">
@@ -167,7 +167,7 @@
                                        </v-card-text>
                                    </v-card>
                                </v-flex>
-                               <v-flex  xs12 sm6 md4>
+                               <v-flex xs12 sm6 md4>
                                  <v-card class="ma-10  rounded-10 card-shadow ">
                                        <v-card-text>
                                              <div class="detail-head">
@@ -215,7 +215,7 @@
                                    <v-card class="ma-10  rounded-10 card-shadow ">
                                        <v-card-text>
                                             <div class="detail-head">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="116" height="20" viewBox="0 0 116 20">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="116" height="20" viewBox="0 0 116 20" >
                                                     <g id="Group_1334" data-name="Group 1334" transform="translate(-16.497 -13)">
                                                         <text id="Transaction_no" data-name="Transaction no" transform="translate(44.497 28)" fill="#b1b9cc" font-size="14" font-family="SegoeUI, Segoe UI" letter-spacing="-0.024em"><tspan x="0" y="0">Transaction No</tspan></text>
                                                         <g id="Group_1335" data-name="Group 1335" transform="translate(16.497 13)">
@@ -306,8 +306,8 @@
                         <v-expansion-panel-content>
                         <template v-slot:header>
                             <div class="accordion-header">
-                              
-                                  <svg id="Group_1259" data-name="Group 1259" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="change-in-mobile">
+
+                                <svg id="Group_1259" data-name="Group 1259" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="change-in-mobile">
                                     <path id="Path_1039" data-name="Path 1039" d="M0,0H24V24H0Z" fill="none"/>
                                     <path id="Path_1040" data-name="Path 1040" d="M5,21V5A2,2,0,0,1,7,3H17a2,2,0,0,1,2,2V21l-3-2-2,2-2-2-2,2L8,19,5,21M9,7h6M9,11h6m-2,4h2" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
                                 </svg>
@@ -330,16 +330,7 @@
 
         <v-layout row wrap class="mt-x">
             <v-flex xs12 md6 lg6 >
-                <v-btn dark  color="#F77D1A" class="receipt__btn">
-                    <svg id="Group_1259" data-name="Group 1259" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path id="Path_1039" data-name="Path 1039" d="M0,0H24V24H0Z" fill="none"/>
-                        <path id="Path_1040" data-name="Path 1040" d="M5,21V5A2,2,0,0,1,7,3H17a2,2,0,0,1,2,2V21l-3-2-2,2-2-2-2,2L8,19,5,21M9,7h6M9,11h6m-2,4h2" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-                    </svg>
-                    Download Receipt
-                </v-btn>
-            </v-flex>
-            <v-flex xs12 md6 lg6 >
-                <v-btn dark  color="#302F37" class="attachment__btn">
+                <v-btn dark  color="#302F37" class="attachment__btn mb-m">
                     <svg id="Group_1258" data-name="Group 1258" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path id="Path_1035" data-name="Path 1035" d="M0,0H24V24H0Z" fill="none"/>
                     <path id="Path_1036" data-name="Path 1036" d="M14,3V7a1,1,0,0,0,1,1h4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
@@ -348,6 +339,15 @@
                     <path id="Path_1038" data-name="Path 1038" d="M9,14l3,3,3-3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
                     </svg>
                     Download Attachment
+                </v-btn>
+            </v-flex>
+            <v-flex xs12 md6 lg6 >
+                <v-btn dark  color="#03A154" class="try-again__btn">
+                    <svg id="Group_1346" data-name="Group 1346" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path id="Path_1063" data-name="Path 1063" d="M0,0H24V24H0Z" fill="none"/>
+                        <path id="Path_1064" data-name="Path 1064" d="M19.95,11a8,8,0,1,0-.5,4m.5,5V15h-5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                    </svg>
+                    Try Again
                 </v-btn>
             </v-flex>
         </v-layout>
@@ -359,7 +359,7 @@
 
 <script>
 export default {
-  name: 'Success',
+  name: 'Failed',
   props: {
     msg: String
   },

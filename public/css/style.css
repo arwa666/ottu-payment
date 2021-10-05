@@ -23,7 +23,9 @@
     src:  url('../fonts/SFProText-Heavy.woff2') format('woff2'),
           url('../fonts/SFProText-Heavy.woff') format('woff');
   }
-
+.mt-10{
+    margin-top:15px;
+}
 .mt-15{
     margin-top:15px;
 }
@@ -32,6 +34,12 @@
 }
 .mt-30{
     margin-top:30px;
+}
+.mt-50{
+    margin-top:50px;
+}
+.mt-x{
+    margin-top:35px;
 }
 .ma-15{
     margin:15px;
@@ -52,6 +60,16 @@
 .break-word{
     word-break: break-all;
 }
+.border-bottom{
+    border-bottom: 1px solid #E0E0E0!important;
+}
+.theme-red{
+    color:#F0252B!important;
+}
+.no-border{
+    border:none!important;
+}
+
 .lang-toggler{
     font-family: 'Tajawal', sans-serif!important;
     color:#fff;
@@ -75,13 +93,14 @@
 .ottu-header{
     height: 65px!important;
     background-color: #302F37!important;
-    margin-bottom: 30px;
 }
 .ottu-footer{
     background-color:#302F37!important;
     height: 65px!important;
     display: flex;
     justify-content: center;
+    padding-top:5px;
+    padding-bottom: 5px;
 }
 .social-icons{
     display: flex;
@@ -89,8 +108,8 @@
 }
 .social__link{
     display: flex;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border: 1px solid #fff;
     border-radius:50% ;
     -webkit-border-radius:50% ;
@@ -101,7 +120,7 @@
     align-items: center;
     text-decoration: none;
     color:#fff;
-    font-size: 20px;
+    font-size: 18px;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -115,13 +134,20 @@
 .social__link:not(:last-child){
     margin-inline-end: 30px;
 }
-footer{
-    margin-top:70px
-}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Payment Request>>>>>>>>>>>>>>>>>>>>>>>>> */
 /***************************************First Section****************/
+.payment-request{
+    height: 100%;
+    padding-top:30px;
+    padding-bottom: 30px;
+}
 .first-section, .second-section{
     padding-bottom:25px;
     border-bottom: 1px solid #E0E0E0;
+}
+.first-section.v-card{
+    padding-bottom: 25px!important;
 }
 .third-section{
     padding-top:25px;
@@ -149,6 +175,11 @@ footer{
     color:#B1B9CC;
     font-size: 16px;
 }
+.first-pattern{
+    position: absolute;
+    right:0px;
+    top:0px;
+}
 .name{
     font-family: 'SF PRO BOLD';
     color:#302F37;
@@ -159,6 +190,10 @@ footer{
     font-family: 'SF PRO REGULAR';
     font-size: 16px; 
     color:#302F37;
+}
+.order-details-accordion{
+    padding-top:15px;
+    padding-bottom: 15px;
 }
 .order-details-accordion .v-expansion-panel__header{
     padding-inline-start: 0px;
@@ -208,12 +243,17 @@ footer{
 .download__btn svg{
     margin-inline-end: 10px;
 }
-
+@media(min-width:768px){
+    .first-pattern{
+        display: none;
+    }
+}
 @media(min-width:992px)and(max-width:1400px){
     .detail-card{
         min-height: 185px!important;
     }
 }
+
 /*************************************Third Section*******************/
 .payment-heading{
     display: flex;
@@ -359,9 +399,15 @@ footer{
     .first-section .receiver:before{
         display: none;
     }
-    .receiver{
-        margin-top:10px
+    
+    .receiver {
+            padding-top: 15px;
     }
+    .sender{
+        padding-bottom: 15px;
+        border-bottom:1px solid #e0e0e0;
+    }
+    
     .pay__btn{
         width: 100%;
     }
@@ -370,6 +416,12 @@ footer{
     }
 }
 /***************************************SUCCESS PAGE************************/
+.success-page{
+    height: 100%;
+    padding-top:30px;
+    padding-bottom: 30px;
+    position: relative;
+}
 .success-message{
     display: flex;
     flex-direction: column!important;
@@ -393,7 +445,6 @@ footer{
 }
 .success-accordion .accordion-header{
     display: flex;
-    justify-content: space-between;
 }
 .success-accordion .accordion-header span{
     font-family: 'SF PRO REGULAR';
@@ -402,4 +453,186 @@ footer{
 }
 .success-accordion .v-expansion-panel__container{
     border-top: none!important;
+}
+.success-pattern{
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+.download-attachment__btn svg , .download-receipt__btn{
+    margin-inline-end: 10px;
+}
+.receipt__btn{
+    width:90%;
+    display: block;
+    margin:auto;
+    height: 48px;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    font-family: 'SF PRO SEMIBOLD';
+    font-size: 17px;
+    text-transform: capitalize!important;
+}
+.receipt__btn svg{
+    margin-inline-end: 10px;
+    position: relative;
+    top:-1px;
+}
+.attachment__btn{
+    width:90%;
+    display: block;
+    margin:auto;
+    height: 48px;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    font-family: 'SF PRO SEMIBOLD';
+    font-size: 17px;
+    text-transform: capitalize!important;
+}
+.attachment__btn svg{
+    margin-inline-end: 10px;
+    position: relative;
+    top:-1px;
+}
+@media(min-width:768px){
+    .success-pattern{
+        display: none;
+    }
+}
+@media(max-width:992px){
+    .receipt__btn{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:768px){
+.order-details-accordion  .v-expansion-panel__container{
+        border: 3px solid #EAEAEA;
+        border-top:3px solid #EAEAEA!important;
+        padding:10px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+}
+.border-none-m{
+    border:none;
+}
+.border-bottom{
+    border: none!important;
+}
+.success-page{
+    background-color: #fff;;
+}
+.mt-x{
+    margin-top:10px;
+}
+.success-message__span2{
+    text-align: center;
+}
+}
+/*******************************************Failed Page************************************/
+.failed-page{
+    height: 100%;
+    padding-top:30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.try-again__btn{
+    width:90%;
+    display: block;
+    margin:auto;
+    height: 48px;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    font-family: 'SF PRO SEMIBOLD';
+    font-size: 17px;
+    text-transform: capitalize!important;
+}
+.try-again__btn svg{
+    margin-inline-end: 10px;
+}
+.accordion-heading{
+    display:flex; 
+    align-items:center;
+    justify-content:space-between;
+    width: 100%;
+}
+.icon-text{
+    color:#B1B9CC!important; 
+    font-size: 16;
+    font-family: 'SF PRO MEDIUM';
+    letter-spacing: -0.024em;
+    margin-inline-start:15px;
+}
+.mr{
+    margin-inline-end: 45px;
+}
+.no-border-top .v-expansion-panel__container{
+    border-top:none!important
+}
+.failed-pattern{
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+@media(min-width:768px){
+    .failed-pattern{
+        display: none;
+    }
+}
+@media(max-width:992px){
+    .mb-m{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:768px){
+    .success-accordion .accordion-heading{
+        flex-direction: column;
+        align-items: start;
+    }
+    .order-details-accordion .v-expansion-panel__header{
+        padding-top:0px;
+        padding-bottom: 0px;
+    }
+    .success-accordion .accordion-header span{
+        margin-inline-start: 10px;
+    }
+ 
+    
+    .mr{
+        margin-inline-end: 0px;
+    }
+    .attachment__btn{
+        width: 100%;
+    }
+    .try-again__btn{
+        width: 100%;
+    }
+    .receipt__btn{
+        width: 100%;
+    }
+    .no-margin-bottom .v-expansion-panel__container{
+        margin-bottom: 0px;
+    }
+    .order-details-accordion{
+        padding-top:0px;
+        padding-bottom: 0px;
+    }
+    .download__btn {
+        margin-top:10px
+    }
+}
+@media(max-width:420px){
+  
 }

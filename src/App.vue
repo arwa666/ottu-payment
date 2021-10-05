@@ -3,7 +3,7 @@
      <v-app-bar  class="ottu-header" app>
     
          <v-layout row justify-center align-center class="height100">
-            <v-flex class="d-flex" justify-space-between xs9 sm9 md9 >
+            <v-flex class="d-flex" justify-space-between xs9 sm9 md9 xl6 >
                <div> 
                  <v-img  src="images/logo.png"
                   height = "35"
@@ -14,8 +14,7 @@
          </v-layout>
        
     </v-app-bar>
-    <!-- <PaymentRequest/> -->
-    <Success/>
+    <router-view/>
       <v-footer class="ottu-footer" padless dark>
        <div class="social-icons">
          <a href="#0" class="social__link"><i class="fab fa-facebook-f"></i></a>
@@ -27,13 +26,11 @@
 </template>
 
 <script>
-import Success from './components/Success.vue'
-// import PaymentRequest from './components/PaymentRequest.vue'
+
 export default {
   name: 'App',
   components: {
-  //  PaymentRequest
-  Success
+
   }
 }
 </script>
@@ -41,3 +38,5 @@ export default {
 <style>
 
 </style>
+
+

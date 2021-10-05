@@ -1,32 +1,52 @@
 <template>
-  <div class="PaymentRequest">
+  <div class="payment-request">
    <v-layout row justify-center>
-       <v-flex xs9 sm9 md9>
+       <v-flex xs9 sm9 md9 xl6>
            <!-- First Section -->
-            <v-card class="first-section">
-                <v-layout row wrap >
-                    <v-flex sm6 md6 class="sender">
-                        <div class="first-section-title">
-                            From
-                        </div>
-                        <h4 class="name">Alghanim Automotive</h4>
-                        <div class="email break-word">www.alghanimautomotive.com</div>
-                    </v-flex>
-                    <v-flex sm6 md6 class="receiver">
+            <div class="border-bottom">
+                <v-card class="first-section">
+                    <v-layout row wrap >
+                        <v-flex sm6 md6 class="sender">
                             <div class="first-section-title">
-                            To
+                                From
                             </div>
-                            <h4 class="name">Mohammed Ebrahim Ahmed Abdelaziz</h4>
-                            <div class="email break-word">mohammedebrahimahmedabdelaziz@mail.com</div>
-                            <div class="phone">+965 1234 1234</div>
-                    </v-flex>
-            </v-layout>
-            </v-card>
+                            <h4 class="name">Alghanim Automotive</h4>
+                            <div class="email break-word">www.alghanimautomotive.com</div>
+                        </v-flex>
+                        <v-flex sm6 md6 class="receiver">
+                                <div class="first-section-title">
+                                To
+                                </div>
+                                <h4 class="name">Mohammed Ebrahim Ahmed Abdelaziz</h4>
+                                <div class="email break-word">mohammedebrahimahmedabdelaziz@mail.com</div>
+                                <div class="phone">+965 1234 1234</div>
+                        </v-flex>
+                </v-layout>
+                    <div class="first-pattern">
+                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51" height="44" viewBox="0 0 51 44">
+                    <defs>
+                        <clipPath id="clip-path">
+                        <rect id="Rectangle_9" data-name="Rectangle 9" width="51" height="44" transform="translate(0.409)" fill="#f2f2f2"/>
+                        </clipPath>
+                    </defs>
+                    <g id="Mask_Group_2" data-name="Mask Group 2" transform="translate(-0.409)" opacity="0.32" clip-path="url(#clip-path)">
+                        <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(0.409 -43)" fill="none" stroke="#eaeaea" stroke-width="12">
+                        <ellipse cx="50.5" cy="43.5" rx="50.5" ry="43.5" stroke="none"/>
+                        <ellipse cx="50.5" cy="43.5" rx="44.5" ry="37.5" fill="none"/>
+                        </g>
+                    </g>
+                    </svg>
+
+                    </div>
+                </v-card>
+            </div>
+
             <!-- Second Section -->
             <v-card class="second-section">
                 <v-layout>
-                    <v-expansion-panel class="order-details-accordion">
+                    <v-expansion-panel class="order-details-accordion  no-border-top no-margin-bottom">
                         <v-expansion-panel-content
+                        class="no-border"
                         >
                         <template v-slot:header>
                             <div class="accordion-header">
@@ -39,7 +59,7 @@
                         </template>
                         <v-card>
                            <v-layout row wrap>
-                               <v-flex  md3>
+                               <v-flex xs12  sm6 md3>
                                    <v-card class="ma-10 rounded-10 card-shadow ">
                                        <v-card-text>
                                             <div class="detail-head">Order No.</div>
@@ -48,7 +68,7 @@
                                        </v-card-text>
                                    </v-card>
                                </v-flex>
-                               <v-flex md3>
+                               <v-flex xs12 sm6 md3>
                                    <v-card class="ma-10  rounded-10 card-shadow ">
                                        <v-card-text>
                                             <div class="detail-head">Order Ipsum</div>
@@ -56,7 +76,7 @@
                                        </v-card-text>
                                    </v-card>
                                </v-flex>
-                               <v-flex md6>
+                               <v-flex xs12 sm12 md6>
                                    <v-card class="ma-10  rounded-10 card-shadow ">
                                        <v-card-text>
                                             <div class="detail-head">Order Ipsum</div>
@@ -66,7 +86,7 @@
                                </v-flex> 
                            </v-layout>
                                               <v-layout row wrap>
-                               <v-flex  md3>
+                               <v-flex xs12 sm6  md3>
                                    <v-card class="ma-10 rounded-10 card-shadow ">
                                        <v-card-text>
                                             <div class="detail-head">Order No.</div>
@@ -75,7 +95,7 @@
                                        </v-card-text>
                                    </v-card>
                                </v-flex>
-                               <v-flex md3>
+                               <v-flex xs12 sm6  md3>
                                    <v-card class="ma-10  rounded-10 card-shadow ">
                                        <v-card-text>
                                             <div class="detail-head">Order Ipsum</div>
@@ -83,7 +103,7 @@
                                        </v-card-text>
                                    </v-card>
                                </v-flex>
-                               <v-flex md6>
+                               <v-flex xs12 sm12 md6>
                                  <v-card class="ma-10  rounded-10 card-shadow ">
                                        <v-card-text>
  
@@ -307,6 +327,15 @@ export default {
         slickOptions: {
                 slidesToShow: 4,
                 arrows: true,
+                 responsive: [
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                        
+                        arrows: false
+                    }
+                    }]
+                
             },
    }),
 
