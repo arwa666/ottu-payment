@@ -225,73 +225,19 @@
                     </v-flex>
                     <v-flex md6>
                         <slick class="payment-slider" :options="slickOptions">
-                            <div class="payment-method">
+                            <div class="payment-method"  v-for="(obj, index) in paymentMethods" :key="index"   :class="obj.id === selectedPayment.id ? 'active' : 'not-active'"   @click="getSelectedPayment(obj)"> 
                                 <div class="payment1">
-                                       <v-img  src="images/knet.png"
+                                       <v-img  :src="obj.src"
                                         width = "56"
                                         height="42"
                                         />
                                
                                 </div>
                                 <div class="number">
-                                    +00.000
+                                    {{ obj.amount }}
                                 </div>
                             </div>
-                            <div class="payment-method">
-                               <div class="payment1">
-                                    <v-img src="images/pay-pal.png"
-                                        width = "56"
-                                        height="42"
-                                    />
-                               </div>
-                                 <div  class="number">
-                                    +01.000
-                                </div>
-                            </div>
-                            <div class="payment-method">
-                                <div class="payment1">
-                                    <v-img src="images/master-card.png"
-                                        width = "56"
-                                        height="42"
-                                    />
-                                </div>
-                                 <div  class="number">
-                                    +02.000
-                                </div>
-                            </div>
-                            <div class="payment-method">
-                               <div class="payment1">
-                                    <v-img src="images/western-union.png"
-                                        width = "56"
-                                        height="42"
-                                    />
-                               </div>
-                                <div  class="number">
-                                    +03.000
-                                </div>
-                            </div>
-                                                   <div class="payment-method">
-                                <div class="payment1">
-                                    <v-img src="images/master-card.png"
-                                        width = "56"
-                                        height="42"
-                                    />
-                                </div>
-                                 <div  class="number">
-                                    +02.000
-                                </div>
-                            </div>
-                            <div class="payment-method">
-                               <div class="payment1">
-                                    <v-img src="images/western-union.png"
-                                        width = "56"
-                                        height="42"
-                                    />
-                               </div>
-                                <div  class="number">
-                                    +03.000
-                                </div>
-                            </div>
+                            
                         </slick>
                     </v-flex>
                 </v-layout>
@@ -323,6 +269,7 @@ import Slick from 'vue-slick';
 import 'slick-carousel/slick/slick.css';
 export default {
   name: 'PaymentRequest',
+  
   props: {
     msg: String
   },
@@ -330,6 +277,40 @@ export default {
       Slick
   },
    data: () => ({
+        isActive: false,
+        selectedPayment:{},
+       paymentMethods:[
+           {
+               id:0,
+               src:"images/knet.png",
+               amount:"+00.000"
+           },
+           {
+            id:1,
+            src:"images/pay-pal.png",
+            amount:"+01.000"   
+           },
+            {
+            id:2,
+            src:"images/master-card.png",
+            amount:"+02.000"   
+           },
+           {
+            id:3,
+            src:"images/western-union.png",
+            amount:"+03.000"   
+           },
+           {
+            id:4,
+            src:"images/master-card.png",
+            amount:"+02.000"   
+           },
+           {
+            id:5,
+            src:"images/western-union.png",
+            amount:"+03.000"   
+           },
+       ],
         slickOptions: {
                 slidesToShow: 4,
                 arrows: true,
@@ -344,7 +325,11 @@ export default {
                 
             },
    }),
-
+  methods: {
+   getSelectedPayment: function(obj) {
+        this.selectedPayment = obj
+    }
+  }
 }
 </script>
 

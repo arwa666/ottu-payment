@@ -142,7 +142,7 @@
     padding-top:30px;
     padding-bottom: 30px;
 }
-.first-section, .second-section{
+.first-section{
     padding-bottom:25px;
     border-bottom: 1px solid #E0E0E0;
 }
@@ -363,8 +363,11 @@ input::-webkit-inner-spin-button {
     display: flex;
     justify-content: center;
 }
-.slick-slide.slick-current .payment-method{
+.active.payment-method{
     border: 1px solid #03A154;
+}
+.payment-method{
+    cursor:pointer;
 }
 .payment-slider{
     margin-top:50px;
@@ -681,7 +684,7 @@ input::-webkit-inner-spin-button {
         padding-bottom: 0px;
     }
     .download__btn {
-        margin-top:10px
+        margin-top:0px
     }
     .icon-text{
         color:#302F37!important;
