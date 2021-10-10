@@ -90,7 +90,7 @@
                                    </v-card>
                                </v-flex> 
                            </v-layout>
-                                              <v-layout row wrap>
+                            <v-layout row wrap>
                                <v-flex xs12 sm6  md3>
                                    <v-card class="ma-10 rounded-10 card-shadow ">
                                        <v-card-text>

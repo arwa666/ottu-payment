@@ -319,7 +319,101 @@
                             </div>
                         </template>
                         <v-card>
-                            hello
+                            <v-layout row wrap>
+                               <v-flex xs12  sm6 md3>
+                                   <v-card class="ma-10 rounded-10 card-shadow ">
+                                       <v-card-text>
+                                            <div class="detail-head">Order No.</div>
+                                            <div class="detail-body break-all">255315
+                                                648255315</div>
+                                       </v-card-text>
+                                   </v-card>
+                               </v-flex>
+                               <v-flex xs12 sm6 md3>
+                                   <v-card class="ma-10  rounded-10 card-shadow ">
+                                       <v-card-text>
+                                            <div class="detail-head">Order Ipsum</div>
+                                            <div class="detail-body">Lorem Ipsum Dolor</div>
+                                       </v-card-text>
+                                   </v-card>
+                               </v-flex>
+                               <v-flex xs12 sm12 md6>
+                                   <v-card class="ma-10  rounded-10 card-shadow ">
+                                       <v-card-text>
+                                            <div class="detail-head">Order Ipsum</div>
+                                            <div class="detail-body">Lorem Ipsum Dolor</div>
+                                       </v-card-text>
+                                   </v-card>
+                               </v-flex> 
+                           </v-layout>
+                            <v-layout row wrap>
+                               <v-flex xs12 sm6  md3>
+                                   <v-card class="ma-10 rounded-10 card-shadow ">
+                                       <v-card-text>
+                                            <div class="detail-head">Order No.</div>
+                                            <div class="detail-body break-all">255315
+                                                648255315</div>
+                                       </v-card-text>
+                                   </v-card>
+                               </v-flex>
+                               <v-flex xs12 sm6  md3>
+                                   <v-card class="ma-10  rounded-10 card-shadow ">
+                                       <v-card-text>
+                                            <div class="detail-head">Order Ipsum</div>
+                                            <div class="detail-body">Lorem Ipsum Dolor</div>
+                                       </v-card-text>
+                                   </v-card>
+                               </v-flex>
+                               <v-flex xs12 sm12 md6>
+                                 <v-card class="ma-10  rounded-10 card-shadow ">
+                                       <v-card-text>
+ 
+                                            <div class="detail-body d-flex justify-start">
+                                                <div class="detail-left">
+                                                        <div class="detail-head">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="56.551" height="20" viewBox="0 0 56.551 20">
+                                                                    <g id="Group_1303" data-name="Group 1303" transform="translate(0 -40)">
+                                                                        <g id="Group_1254" data-name="Group 1254" transform="translate(0 40)">
+                                                                        <path id="Path_1033" data-name="Path 1033" d="M0,0H20.561V20H0Z" fill="none"/>
+                                                                        <rect id="Rectangle_10" data-name="Rectangle 10" width="14.234" height="13.333" rx="2" transform="translate(3.031 4.167)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                                                        <line id="Line_46" data-name="Line 46" y2="3.333" transform="translate(13.354 2.5)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                                                        <line id="Line_47" data-name="Line 47" y2="3.333" transform="translate(6.924 2.5)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                                                        <line id="Line_48" data-name="Line 48" x2="14.234" transform="translate(3.031 9.167)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                                                        <rect id="Rectangle_11" data-name="Rectangle 11" width="0.857" height="1.667" transform="translate(6.946 12.5)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                                                        </g>
+                                                                        <text id="date" transform="translate(28.551 55)" fill="#b1b9cc" font-size="14" font-family="SegoeUI, Segoe UI" letter-spacing="-0.024em"><tspan x="0" y="0">Date</tspan></text>
+                                                                    </g>
+                                                            </svg>
+                                                        </div>
+                                                    <div>
+                                                        26-4-2021
+                                                    </div>
+                                                </div>
+                                                <div class="detail-right">
+                                                    <div class="detail-head">
+                                                     <svg xmlns="http://www.w3.org/2000/svg" width="90.346" height="20" viewBox="0 0 90.346 20">
+                                                        <g id="Group_1305" data-name="Group 1305" transform="translate(0 -40)">
+                                                            <text id="Internal_ID" data-name="Internal ID" transform="translate(29.346 55)" fill="#b1b9cc" font-size="14" font-family="SegoeUI, Segoe UI" letter-spacing="-0.024em"><tspan x="0" y="0">Internal ID</tspan></text>
+                                                            <g id="Group_1255" data-name="Group 1255" transform="translate(0 40)">
+                                                            <path id="Path_1034" data-name="Path 1034" d="M0,0H20.561V20H0Z" fill="none"/>
+                                                            <rect id="Rectangle_12" data-name="Rectangle 12" width="16.804" height="13.333" rx="3" transform="translate(2.214 3.333)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                                            <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="2.142" cy="1.667" rx="2.142" ry="1.667" transform="translate(6.164 6.667)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                                            <line id="Line_49" data-name="Line 49" x2="1.713" transform="translate(13.484 6.667)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                                            <line id="Line_50" data-name="Line 50" x2="1.713" transform="translate(13.484 10)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                                            <line id="Line_51" data-name="Line 51" x2="8.567" transform="translate(6.376 13.333)" fill="none" stroke="#b1b9cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                                            </g>
+                                                        </g>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="detail-body break-all">
+                                                        1234567890987623
+                                                    </div>
+                                                </div>
+                                            </div>
+                                       </v-card-text>
+                                   </v-card>
+                               </v-flex> 
+                           </v-layout>
                         </v-card>
                         </v-expansion-panel-content>
                     </v-expansion-panel>
