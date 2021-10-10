@@ -230,6 +230,7 @@
                                        <v-img  :src="obj.src"
                                         width = "56"
                                         height="42"
+                                        :lazy-src="obj.src"
                                         />
                                
                                 </div>

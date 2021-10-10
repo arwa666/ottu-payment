@@ -368,6 +368,7 @@ input::-webkit-inner-spin-button {
 }
 .payment-method{
     cursor:pointer;
+
 }
 .payment-slider{
     margin-top:50px;
