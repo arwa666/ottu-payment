@@ -225,14 +225,14 @@
                     </v-flex>
                     <v-flex md6>
                         <slick class="payment-slider" :options="slickOptions">
-                            <div class="payment-method"  v-for="(obj, index) in paymentMethods" :key="index"   :class="obj.id === selectedPayment.id ? 'active' : 'not-active'"   @click="getSelectedPayment(obj)"> 
+                            <div class="payment-method"  v-for="(obj, index) in paymentMethods" :key="index"   :class="obj.id === selectedPayment.id ? 'active' : 'not-active'"  @click="getSelectedPayment(obj)" > 
                                 <div class="payment1">
                                        <v-img  :src="obj.src"
                                         width = "56"
                                         height="42"
                                         :lazy-src="obj.src"
                                         />
-                               
+                                    
                                 </div>
                                 <div class="number">
                                     {{ obj.amount }}
@@ -311,10 +311,31 @@ export default {
             src:"images/western-union.png",
             amount:"+03.000"   
            },
+            {
+               id:6,
+               src:"images/knet.png",
+               amount:"+00.000"
+           },
+           {
+            id:7,
+            src:"images/pay-pal.png",
+            amount:"+01.000"   
+           },
+            {
+            id:8,
+            src:"images/master-card.png",
+            amount:"+02.000"   
+           },
+           {
+            id:9,
+            src:"images/western-union.png",
+            amount:"+03.000"   
+           },
        ],
         slickOptions: {
                 slidesToShow: 4,
                 arrows: true,
+                 infinite: false,
                  responsive: [
                     {
                     breakpoint: 1024,
@@ -330,6 +351,7 @@ export default {
    getSelectedPayment: function(obj) {
         this.selectedPayment = obj
     }
+
   }
 }
 </script>
