@@ -26,5 +26,18 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="">
+ $('.payment-slider').on('click', '.slick-slide', function (e) {
+            e.stopPropagation();
+            var index = $(this).index();
+            if ($('.slick-slider').slick('slickCurrentSlide') !== index) {
+                  $('.slick-slider').slick('slickGoTo', index);
+            }
+        });
+  </script>
   </body>
 </html>

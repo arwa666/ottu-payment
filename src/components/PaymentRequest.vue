@@ -331,11 +331,22 @@ export default {
             src:"images/western-union.png",
             amount:"+03.000"   
            },
+            {
+            id:10,
+            src:"images/western-union.png",
+            amount:"+03.000"   
+           },
+            {
+            id:11,
+            src:"images/western-union.png",
+            amount:"+03.000"   
+           },
        ],
         slickOptions: {
                 slidesToShow: 4,
                 arrows: true,
                  infinite: false,
+                 
                  responsive: [
                     {
                     breakpoint: 1024,
@@ -343,15 +354,30 @@ export default {
                         
                         arrows: false
                     }
-                    }]
+                    },
+                    {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 3,
+                         arrows: false,
+                        centerMode: true,
+                        centerPadding: '15px',
+                    },
+                    }
+
+                    ]
                 
             },
    }),
   methods: {
    getSelectedPayment: function(obj) {
         this.selectedPayment = obj
-    }
+        //  var index = obj.data("slick-index");
+         console.log(obj);
+    },
+    slideSelected: function(){
 
+    }
   }
 }
 </script>
@@ -359,5 +385,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 
+ .slick-current .payment-method{
+       border: 3px solid #03A154;
+ }
+@media(max-width:600){
+     .slick-center .payment-method{
+    border: 3px solid #03A154;
+ }
+}
 
 </style>
