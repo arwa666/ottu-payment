@@ -374,9 +374,7 @@ export default {
         //  var index = obj.data("slick-index");
          console.log(obj);
     },
-    slideSelected: function(){
 
-    }
   }
 }
 </script>
@@ -384,13 +382,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style  >
 
- .slick-current .payment-method{
+ .active.payment-method{
        border: 3px solid #03A154;
  }
-     .slick-center .payment-method{
-    border: 3px solid #03A154;
- }
+
+
 @media(max-width:600px){
+     /* .slick-center .payment-method{
+    border: 3px solid #03A154!important;
+    } */
 
     .payment-slider .slick-prev.slick-arrow{
       left: -5px!important;
