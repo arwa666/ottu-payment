@@ -283,71 +283,69 @@ export default {
        paymentMethods:[
            {
                id:0,
-               src:"@/assets/images/knet.png",
+               src:"images/knet.png",
                amount:"+00.000"
            },
            {
             id:1,
-            src:"@/assets/images/pay-pal.png",
+            src:"images/pay-pal.png",
             amount:"+01.000"   
            },
             {
             id:2,
-            src:"@/assets/images/master-card.png",
+            src:"images/master-card.png",
             amount:"+02.000"   
            },
            {
             id:3,
-            src:"@/assets/images/western-union.png",
+            src:"images/western-union.png",
             amount:"+03.000"   
            },
            {
             id:4,
-            src:"@/assets/images/master-card.png",
+            src:"images/master-card.png",
             amount:"+02.000"   
            },
            {
             id:5,
-            src:"@/assets/images/western-union.png",
+            src:"images/western-union.png",
             amount:"+03.000"   
            },
             {
                id:6,
-               src:"@/assets/images/knet.png",
+               src:"images/knet.png",
                amount:"+00.000"
            },
            {
             id:7,
-            src:"@/assets/images/pay-pal.png",
+            src:"images/pay-pal.png",
             amount:"+01.000"   
            },
             {
             id:8,
-            src:"@/assets/images/master-card.png",
+            src:"images/master-card.png",
             amount:"+02.000"   
            },
            {
             id:9,
-            src:"@/assets/images/western-union.png",
+            src:"images/western-union.png",
             amount:"+03.000"   
            },
             {
             id:10,
-            src:"@/assets/images/western-union.png",
+            src:"images/western-union.png",
             amount:"+03.000"   
            },
             {
             id:11,
-            src:"@/assets/images/western-union.png",
+            src:"images/western-union.png",
             amount:"+03.000"   
            },
        ],
         slickOptions: {
-                slidesToShow: 5,
+                slidesToShow: 4,
                 arrows: true,
                  infinite: false,
-                  centerMode: true,
-                centerPadding: '0px',
                  responsive: [
                     {
                     breakpoint: 1024,
@@ -401,9 +399,5 @@ export default {
       right: -5px!important;
    }
   }
-@media(min-width:992px){
-    .payment-slider .slick-slide {
-        margin-inline-end: 20px;
-    }
-}
+
 </style>
