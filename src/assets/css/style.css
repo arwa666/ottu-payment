@@ -452,6 +452,7 @@ input::-webkit-inner-spin-button {
 .v-expansion-panel__container--active .mr{
     display: none;
 }
+
 @media(max-width:420px){
     .payment-method{
         padding-inline-start: 5px;

@@ -343,10 +343,11 @@ export default {
            },
        ],
         slickOptions: {
-                slidesToShow: 4,
+                slidesToShow: 5,
                 arrows: true,
                  infinite: false,
-                 
+                  centerMode: true,
+                centerPadding: '0px',
                  responsive: [
                     {
                     breakpoint: 1024,
@@ -359,7 +360,7 @@ export default {
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 3,
-                         arrows: false,
+                         arrows: true,
                         centerMode: true,
                         centerPadding: '15px',
                     },
@@ -383,15 +384,26 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style  >
 
  .slick-current .payment-method{
        border: 3px solid #03A154;
  }
-@media(max-width:600){
      .slick-center .payment-method{
     border: 3px solid #03A154;
  }
-}
+@media(max-width:600px){
 
+    .payment-slider .slick-prev.slick-arrow{
+      left: -5px!important;
+   }
+     .payment-slider .slick-next.slick-arrow{
+      right: -5px!important;
+   }
+  }
+@media(min-width:992px){
+    .payment-slider .slick-slide {
+        margin-inline-end: 20px;
+    }
+}
 </style>

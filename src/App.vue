@@ -27,6 +27,8 @@
 
 <script>
 
+import '@/assets/css/all.css';
+import '@/assets/css/style.css';
 export default {
   name: 'App',
   components: {
