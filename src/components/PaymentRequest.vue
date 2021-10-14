@@ -343,11 +343,9 @@ export default {
            },
        ],
         slickOptions: {
-                slidesToShow: 5,
+                slidesToShow: 4,
                 arrows: true,
                  infinite: false,
-                  centerMode: true,
-                centerPadding: '0px',
                  responsive: [
                     {
                     breakpoint: 1024,
@@ -401,9 +399,5 @@ export default {
       right: -5px!important;
    }
   }
-@media(min-width:992px){
-    .payment-slider .slick-slide {
-        margin-inline-end: 20px;
-    }
-}
+
 </style>
