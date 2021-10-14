@@ -283,7 +283,7 @@ export default {
        paymentMethods:[
            {
                id:0,
-               src:"images/knet.png",
+               src:"../assets/images/knet.png",
                amount:"+00.000"
            },
            {
@@ -293,17 +293,17 @@ export default {
            },
             {
             id:2,
-            src:"images/master-card.png",
+            src:"../assets/images/master-card.png",
             amount:"+02.000"   
            },
            {
             id:3,
-            src:"images/western-union.png",
+            src:"../assets/images/western-union.png",
             amount:"+03.000"   
            },
            {
             id:4,
-            src:"images/master-card.png",
+            src:"../assets/images/master-card.png",
             amount:"+02.000"   
            },
            {
@@ -313,32 +313,32 @@ export default {
            },
             {
                id:6,
-               src:"images/knet.png",
+               src:"../assets/images/knet.png",
                amount:"+00.000"
            },
            {
             id:7,
-            src:"images/pay-pal.png",
+            src:"../assets/images/pay-pal.png",
             amount:"+01.000"   
            },
             {
             id:8,
-            src:"images/master-card.png",
+            src:"../assets/images/master-card.png",
             amount:"+02.000"   
            },
            {
             id:9,
-            src:"images/western-union.png",
+            src:"../assets/images/western-union.png",
             amount:"+03.000"   
            },
             {
             id:10,
-            src:"images/western-union.png",
+            src:"../assets/images/western-union.png",
             amount:"+03.000"   
            },
             {
             id:11,
-            src:"images/western-union.png",
+            src:"../assets/images/western-union.png",
             amount:"+03.000"   
            },
        ],
