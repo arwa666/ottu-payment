@@ -280,13 +280,7 @@
    </v-layout>
 
   </div>
-     <!-- <v-footer class="ottu-footer" padless dark>
-       <div class="social-icons">
-         <a href="#0" class="social__link"><i class="fab fa-facebook-f"></i></a>
-         <a href="#0" class="social__link"><i class="fab fa-twitter"></i></a>
-         <a href="#0" class="social__link"><i class="fab fa-instagram"></i></a>
-       </div>
-      </v-footer>    -->
+
 </div>
 </template>
 
