@@ -1,6 +1,6 @@
 <template>
   <v-app id="app">
-     <v-app-bar  class="ottu-header" app>
+     <!-- <v-app-bar  class="ottu-header" app>
     
          <v-layout row justify-center align-center class="height100">
             <v-flex class="d-flex" justify-space-between xs11 sm10 md9 xl6 >
@@ -13,7 +13,7 @@
             </v-flex>
          </v-layout>
        
-    </v-app-bar>
+    </v-app-bar> -->
     <router-view/>
       <v-footer class="ottu-footer" padless dark>
        <div class="social-icons">

@@ -1,7 +1,7 @@
 <template>
 
 <div  class="height100">
-  <div   class="ottu-header" >
+  <div   class="ottu-header">
     
          <v-layout row justify-center align-center class="height100">
             <v-flex class="d-flex" justify-space-between xs11 sm10 md9 xl6 >
@@ -23,19 +23,19 @@
             <div class="border-bottom">
                 <v-card class="first-section">
                     <v-layout row wrap >
-                        <v-flex sm6 md6 class="sender">
+                        <v-flex  xs6 sm6 md6 class="sender">
                             <div class="first-section-title">
                                 From
                             </div>
                             <h4 class="name">Alghanim Automotive</h4>
                             <div class="email break-word">www.alghanimautomotive.com</div>
                         </v-flex>
-                        <v-flex sm6 md6 class="receiver">
+                        <v-flex xs6 sm6 md6 class="receiver">
                                 <div class="first-section-title">
                                 To
                                 </div>
                                 <h4 class="name">Mohammed Ebrahim Ahmed Abdelaziz</h4>
-                                <div class="email break-word">mohammedebrahimahmedabdelaziz@mail.com</div>
+                                <div class="email break-word">mohebra0123@ottu.com</div>
                                 <div class="phone">+965 1234 1234</div>
                         </v-flex>
                 </v-layout>
@@ -195,7 +195,7 @@
             <!-- Third Section -->
             <v-card class="third-section">
                 <v-layout row wrap>
-                    <v-flex md6 >
+                    <v-flex md6>
                         <div class="d-none-m">
                             <svg xmlns="http://www.w3.org/2000/svg" width="148" height="24" viewBox="0 0 148 24">
                                 <g id="Group_1353" data-name="Group 1353" transform="translate(0 -6)">
@@ -213,7 +213,7 @@
                         </div>
                         <v-layout class="mt-15" row wrap>
                             <v-flex md6>
-                                <div class="payment-heading ">
+                                <div class="payment-heading">
                                     Total Bill
                                 </div>
                             </v-flex>
@@ -280,13 +280,7 @@
    </v-layout>
 
   </div>
-     <!-- <v-footer class="ottu-footer" padless dark>
-       <div class="social-icons">
-         <a href="#0" class="social__link"><i class="fab fa-facebook-f"></i></a>
-         <a href="#0" class="social__link"><i class="fab fa-twitter"></i></a>
-         <a href="#0" class="social__link"><i class="fab fa-instagram"></i></a>
-       </div>
-      </v-footer>    -->
+   
 </div>
 </template>
 
@@ -295,7 +289,7 @@
 import Slick from 'vue-slick';
 import 'slick-carousel/slick/slick.css';
 export default {
-  name: 'PaymentRequest',
+  name: 'PaymentRequestOne',
   
   props: {
     msg: String
@@ -406,6 +400,31 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+  @media(max-width:768px){
+      .receiver{
+          padding-top:0px;
+      }
+      .sender{
+          border-bottom: none;
+          padding-inline-end: 35px;
+      }
+       .first-section .receiver:before{
+        display: block;
+        top:5px;
+        left:-21px;
+    }
+    .name{
+        font-size: 15px;
+    }
+    .email, .phone{
+        font-size: 13px;
+    }
+    .first-section-title{
+        font-size: 13px;
+    }
+  }
+</style>
 <style  >
 
  .active.payment-method{
@@ -426,17 +445,4 @@ export default {
    }
   }
 
-</style>
-<style scoped>
- @media(max-width:768px){
-     .first-section-title{
-         font-size: 13px;
-     }
-     .email, .phone{
-         font-size: 13px;
-     }
-     .name{
-         font-size: 15px;
-     }
- }
 </style>

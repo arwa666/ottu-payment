@@ -1,4 +1,19 @@
 <template>
+<div class="height100">
+    <div   class="ottu-header" >
+    
+         <v-layout row justify-center align-center class="height100">
+            <v-flex class="d-flex" justify-space-between xs11 sm10 md9 xl6 >
+               <div> 
+                 <v-img  src="images/logo.png"
+                  height = "35"
+                  width="103"/>
+                </div>
+                <a href="#0" class="lang-toggler">بالعربي</a>
+            </v-flex>
+         </v-layout>
+       
+    </div>
   <div class="failed-page">
    <v-layout row justify-center>
        <v-flex xs11 sm10 md9 xl6>
@@ -449,6 +464,8 @@
    </v-layout>
 
   </div>
+
+</div>
 </template>
 
 <script>

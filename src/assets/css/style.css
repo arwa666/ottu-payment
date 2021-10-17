@@ -75,6 +75,8 @@
     color:#fff;
     font-size: 20px;
     text-decoration: none;
+    display: flex;
+    align-items: flex-end;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -137,6 +139,7 @@
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Payment Request>>>>>>>>>>>>>>>>>>>>>>>>> */
 /***************************************First Section****************/
+
 .payment-request{
     height: 100%;
     padding-top:30px;
@@ -392,6 +395,9 @@ input::-webkit-inner-spin-button {
 .first-section.v-card,.third-section.v-card{
     padding:15px;
 }
+/* .first-section{
+    margin-top:65px;
+} */
 @media(min-width:768px){
     .theme--light.application{
         background-color: #fff!important;
@@ -419,16 +425,13 @@ input::-webkit-inner-spin-button {
     .third-section.v-card{
         border: 4px solid #EAEAEA;
     }
-    .first-section .receiver:before{
-        display: none;
-    }
-    
-    .receiver {
+   
+    /* .receiver {
             padding-top: 15px;
-    }
+    } */
     .sender{
         padding-bottom: 15px;
-        border-bottom:1px solid #e0e0e0;
+        /* border-bottom:1px solid #e0e0e0; */
     }
     
     .pay__btn{
@@ -447,22 +450,37 @@ input::-webkit-inner-spin-button {
     .detail-num{
         margin-inline-start: 15px;
     }
+    .first-section .receiver:before{
+        display: none;
+    }
    
 }
 .v-expansion-panel__container--active .mr{
     display: none;
 }
+@media(max-width:557px){
+   .sender{
+    border-bottom:1px solid #e0e0e0;
+   }
 
+.receiver{
+    padding-top:15px
+}
+}
 @media(max-width:420px){
     .payment-method{
         padding-inline-start: 5px;
         padding-inline-end: 5px;
     }
+    .lang-toggler{
+        font-size: 15px;
+    }
 }
 /***************************************SUCCESS PAGE************************/
 .success-page{
     height: 100%;
-    padding-top:30px;
+    /* height: calc(100vh - 130px); */
+    padding-top:80px;
     padding-bottom: 30px;
     position: relative;
 }
@@ -585,7 +603,8 @@ input::-webkit-inner-spin-button {
 /*******************************************Failed Page************************************/
 .failed-page{
     height: 100%;
-    padding-top:30px;
+    /* height: calc(100vh - 130px); */
+    padding-top:80px;
     padding-bottom: 30px;
     position: relative;
 }
@@ -691,5 +710,48 @@ input::-webkit-inner-spin-button {
     }
     .accordion-header svg .ico{
         stroke:#302F37!important;
+    }
+    .success-message__span1{
+        font-size: 22px;
+    }
+    .success-message__span2 {
+        font-size: 15px;
+    }
+    .success-message__span3{
+        font-size: 15px;
+    }
+}
+@media(max-width:600px){
+    .detail-body{
+        font-size: 13px;
+    }
+    .download__btn{
+        font-size: 15px;
+    }
+    .payment-heading{
+        font-size: 15px;
+    }
+    .bill-value{
+        font-size: 17px;
+        width: 160px;
+        text-align: center;
+        margin-left: auto;
+    }
+    .payment-value{
+        width: 160px; 
+        margin-inline-start: auto;
+    }
+    .currency{
+        font-size: 13px;
+        font-weight: 400!important;
+    }
+    .terms{
+        font-size: 13px;
+    }
+    .detail-head{
+        font-size: 12px;
+    }
+    .d-none-m{
+        display: none;
     }
 }

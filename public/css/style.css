@@ -554,6 +554,7 @@ input::-webkit-inner-spin-button {
         margin-bottom: 20px;
     }
 }
+
 @media(max-width:768px){
 .order-details-accordion  .v-expansion-panel__container{
         border: 3px solid #EAEAEA;
