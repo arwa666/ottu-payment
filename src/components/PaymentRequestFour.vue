@@ -439,6 +439,9 @@ export default {
     .first-section-title{
         font-size: 13px;
     }
+     .first-section .receiver:before{
+        height:82px
+    }
   }
 </style>
 <style  >
