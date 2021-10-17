@@ -478,7 +478,7 @@ input::-webkit-inner-spin-button {
 /***************************************SUCCESS PAGE************************/
 .success-page{
     /* height: 100%; */
-    /* height: calc(100vh - 130px); */
+    height: calc(100% - 65px);
     padding-top:80px;
     padding-bottom: 30px;
     position: relative;
@@ -602,10 +602,15 @@ input::-webkit-inner-spin-button {
 /*******************************************Failed Page************************************/
 .failed-page{
     /* height: 100%; */
-    /* height: calc(100vh - 130px); */
+    height: calc(100% - 65px);
     padding-top:80px;
     padding-bottom: 30px;
     position: relative;
+}
+@media(max-width:768px){
+    .failed-page{
+        background-color: #fff;
+    }
 }
 .try-again__btn{
     width:90%;
