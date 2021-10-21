@@ -556,6 +556,24 @@ input::-webkit-inner-spin-button {
     font-size: 17px;
     text-transform: capitalize!important;
 }
+
+.terms-conditions__card .v-card__text{
+    font-size: 16px;
+    color: #302F37;
+    font-family: 'SF PRO REGULAR'!important;
+}
+.terms-conditions__card .headline{
+    color: #302F37;
+    font-family: 'SF PRO REGULAR'!important;
+}
+.terms-conditions__card .v-btn:first-of-type{
+    color:#F77D1A!important;
+    font-family: 'SF PRO REGULAR'!important;
+}
+.terms-conditions__card .v-btn:last-of-type{
+    color:rgb(3, 161, 84);
+    font-family: 'SF PRO REGULAR'!important;
+}
 .attachment__btn svg{
     margin-inline-end: 10px;
     position: relative;

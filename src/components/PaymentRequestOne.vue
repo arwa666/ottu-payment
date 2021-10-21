@@ -273,7 +273,24 @@
                 <v-layout class="mt-30 justify-center">
                     <div class="terms">
                         by clicking pay button your are accepting our 
-                        <a href="#0" class="terms__link">Terms &amp; Conditions</a>
+                        <!-- <a href="#0" class="terms__link">Terms &amp; Conditions</a> -->
+                        <v-dialog v-model="dialog" width="600px">
+                            <template v-slot:activator="{ on }">
+                                <a href="#0"  class="terms__link" v-on="on">Terms &amp; Conditions</a>
+                            </template>
+                            <v-card class="terms-conditions__card">
+                                <v-card-title>
+                                <span class="headline">Use Google's location service?</span>
+                                </v-card-title>
+                                <v-card-text>Lorem ipsum dolor sit amet, semper quis, sapien id natoque elit. Nostra urna at, magna at neque sed sed ante imperdiet, dolor mauris cursus velit, velit non, sem nec. Volutpat sem ridiculus placerat leo, augue in, duis erat proin condimentum in a eget, sed fermentum sed vestibulum varius ac, vestibulum volutpat orci ut elit eget tortor. Ultrices nascetur nulla gravida ante arcu. Pharetra rhoncus morbi ipsum, nunc tempor debitis, ipsum pellentesque, vitae id quam ut mauris dui tempor, aptent non. Quisque turpis. Phasellus quis lectus luctus orci eget rhoncus. Amet donec vestibulum mattis commodo, nulla aliquet, nibh praesent, elementum nulla. Sit lacus pharetra tempus magna neque pellentesque, nulla vel erat.
+                               </v-card-text>
+                                <v-card-actions>
+                                <v-spacer></v-spacer>
+                                <v-btn color="green darken-1" flat="flat" @click="dialog = false">Disagree</v-btn>
+                                <v-btn color="green darken-1" flat="flat" @click="dialog = false">Agree</v-btn>
+                                </v-card-actions>
+                            </v-card>
+                            </v-dialog>
                     </div>
                 </v-layout>
        </v-flex>
@@ -298,8 +315,9 @@ export default {
       Slick
   },
    data: () => ({
-        isActive: false,
-        selectedPayment:{},
+       dialog:false,
+       isActive: false,
+       selectedPayment:{},
        paymentMethods:[
            {
                id:0,
